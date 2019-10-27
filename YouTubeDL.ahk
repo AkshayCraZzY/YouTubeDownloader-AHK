@@ -42,7 +42,7 @@ CheckFiles:
 		IfMsgBox, No
 			return
 		IfMsgBox, Yes	
-			Run, https://github.com/AkshayCraZzY/YouTubeDownloader-AHK/raw/master/youtube-dl.exe
+			Run, https://yt-dl.org/latest/youtube-dl.exe
 		goto, Quiter
 	}
 	if !FileExist("ffmpeg.exe")
@@ -57,7 +57,7 @@ CheckFiles:
 	}
 }
 	
-ver=v0.5.0
+ver=v0.5.1
 VidTitle:="%(title)s.%(ext)s"
 bgcolor=FFFFFF
 FileDelete, update.ahk
